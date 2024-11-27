@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASUME - Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="FASUME.css">
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="home-page" class="page active">
+        <div class="welcome-content">
+            <h1>FASUME</h1>
+            <p>Create your professional resume within <strong>2 minutes</strong>!</p>
+            <p>Add your details, pick a style, and download your ATS-friendly resume instantly.</p>
+            <button id="get-started">Get Started</button>
+        </div>
+        <div class="background-animation">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        
+    </div>
+
+    <!-- Form Page -->
+    <div id="form-page" class="page">
+        <button id="back-to-home-1" class="back-home-btn">Go Back to Home</button>
+        <div class="form-container">
+            <h2>Fill in Your Details</h2>
+            <form id="resume-form">
+                <label>Full Name: <input type="text" id="name"></label>
+                <label>Email: <input type="email" id="email"></label>
+                <label>Phone: <input type="text" id="phone"></label>
+                <label>Address: <input type="text" id="address"></label>
+                <label>Summary: <textarea id="summary" rows="3"></textarea></label>
+                <label>Skills: <textarea id="skills" rows="3" placeholder="e.g., JavaScript, HTML, CSS"></textarea></label>
+                <label>Experience: <textarea id="experience" rows="3"></textarea></label>
+                <label>Education: <textarea id="education" rows="3"></textarea></label>
+                <label>Projects: <textarea id="projects" rows="3"></textarea></label>
+                <label>Certifications: <textarea id="certifications" rows="3"></textarea></label>
+                <label>Top Border Color: 
+                    <input type="color" id="resume-color" value="#007bff">
+                </label>
+                <button type="submit" id="generate-resume">Get Your Resume</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Resume Display Page -->
+    <div id="resume-page" class="page">
+        <button id="back-to-home-2" class="back-home-btn">Go Back to Home</button>
+        <div id="resume-display">
+            <h2>Your Resume</h2>
+            <div id="resume-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+            <button id="download-resume">Download as PDF</button>
+        </div>
+    </div>
+
+    <script src="FASUME.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+</body>
+</html>
